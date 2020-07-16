@@ -1,0 +1,107 @@
+.portfolio {
+
+	.portfolio__wrapper {
+		background-color: #e9d2d2;
+	}
+	.portfolio__inner {
+		padding-bottom: 7rem;
+	}
+	.title {
+		color: #f6f6f6;
+		font-size: 16.2rem;
+		font-family: "Work Sans";
+		font-weight: "Extra Bold";
+		margin-top: 18rem;
+		text-align: center;
+		&::after {
+			content: "If you do it right, it will last forever.";
+			display: block;
+			color: #575757;
+			font-family: "Work Sans";
+			font-size: 2.5rem;
+			font-weight: 400;
+			margin: auto;
+			margin-top: -7.7rem;
+			@media (min-width: $w320) and  (max-width: $w424) {
+				margin-top: -5.7rem;
+			}
+		}
+		@media (min-width: $w425) and  (max-width: $w767) {
+			font-size: 15rem;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			font-size: 11rem;
+			margin-top: 5rem;
+		}
+	}
+	.content {
+		display: flex;
+		justify-content: center;
+		@media (min-width: $w425) and  (max-width: $w767) {
+			flex-wrap: wrap;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			flex-wrap: wrap;
+		}
+	}
+	.card {
+		margin: 0 1.4rem 0 1.4rem;
+		@media (min-width: $w1024) and  (max-width: $w1399) {
+			max-width: 38rem;
+		}
+		@media (min-width: $w768) and  (max-width: $w1023) {
+			max-width: 27rem;
+		}
+	}
+	.baner {
+		width: 44rem;
+		height: 36rem;
+		background-color: #e2afaf;
+		@media (min-width: $w1024) and  (max-width: $w1399) {
+			width: unset;
+		}
+		@media (min-width: $w768) and  (max-width: $w1023) {
+			width: 27rem;
+			height: 22rem;
+		}
+	}
+	.card-titel {
+		width: 12.5rem;
+		height: 1.8rem;
+		color: #1f2021;
+		font-size: 2rem;
+		font-family: "Work Sans";
+		font-weight: "Extra Bold";
+		padding: 2.6rem 0 0 3rem;
+		margin: 0;
+		@media (min-width: $w425) and  (max-width: $w767) {
+			padding-top: 0.6rem;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			padding-top: 0.6rem;
+		}
+	}
+	.card-text {
+		margin: 0;
+		padding: 1.6rem 0 0 3rem;
+		width: 39.6rem;
+		height: 4.1rem;
+		color: #4d4c4c;
+		font-family: "Work Sans";
+		font-size: 1.5rem;
+		font-weight: 400;
+		@media (min-width: $w1024) and  (max-width: $w1399) {
+			width: unset;
+		}
+		@media (min-width: $w768) and  (max-width: $w1023) {
+			width: 24rem;
+			height: unset;
+		}
+		@media (min-width: $w425) and  (max-width: $w767) {
+			padding-bottom: 4.6rem;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			padding-bottom: 4.6rem;
+		}
+	}
+}

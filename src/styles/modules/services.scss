@@ -1,0 +1,173 @@
+.services {
+
+	.container {
+		max-width: 115.6rem;
+	}
+	.title {
+		color: #f6f6f6;
+		font-size: 16.2rem;
+		font-family: "Work Sans";
+		font-weight: "Extra Bold";
+		margin-top: 7rem;
+		text-align: center;
+		&::after {
+			content: "Don't be busy, be productive";
+			display: block;
+			color: #575757;
+			font-family: "Work Sans";
+			font-size: 2.5rem;
+			font-weight: 400;
+			margin: auto;
+			margin-top: -7.7rem;
+			@media (min-width: $w320) and  (max-width: $w424) {
+				margin-top: -5.7rem;
+			}
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			font-size: 11rem;
+		}
+	}
+	.content {
+		display: flex;
+		@media (min-width: $w768) and  (max-width: $w1023) {
+			padding-left: 3rem;
+		}
+		@media (min-width: $w425) and  (max-width: $w768) {
+			justify-content: center;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			justify-content: center;
+		}
+	}
+	.info {
+		flex: 70%;
+		display: flex;
+		flex-wrap: wrap;
+		@media (min-width: $w1024) and  (max-width: $w1399) {
+			max-width: 65%;
+		}
+		@media (min-width: $w425) and  (max-width: $w768) {
+			max-width: 90%;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			max-width: 90%;
+		}
+	}
+	.info-item {
+		display: flex;
+		flex: 50%;
+		padding-bottom: 3rem;
+		@media (min-width: $w768) and  (max-width: $w1023) {
+			flex: none;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			flex: none;
+		}
+	}
+	.info-logo {
+		flex: 40%;
+		@media (min-width: $w768) and  (max-width: $w1023) {
+			flex: 25%;
+		}
+		@media (min-width: $w425) and  (max-width: $w768) {
+			flex: 25%;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			flex: none;
+		}
+	}
+	.info-cont {
+		@media (min-width: $w768) and  (max-width: $w1023) {
+			max-width: 22rem;
+		}
+		@media (min-width: $w425) and  (max-width: $w768) {
+			width: 20rem;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			max-width: 35rem;
+			margin-left: 2rem;
+		}
+	}
+	.info-head {
+		font-family: "Work Sans";
+		font-weight: "Extra Bold";
+		color: #1f2021;
+		font-size: 2rem;
+		margin: 0;
+		@media (min-width: $w425) and  (max-width: $w768) {
+			width: 90%;
+		}
+	}
+	.info-text {
+		width: 60%;
+		margin-top: 4rem;
+		margin-bottom: 0;
+		@media (min-width: $w425) and  (max-width: $w768) {
+			width: 90%;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			width: 100%;
+		}
+	}
+	.graphic {
+		background: url(../../img/services-graphic.png) no-repeat;
+		width: 38px;
+		height: 37px;
+	}
+	.design {
+		background: url(../../img/services-design.png) no-repeat;
+		width: 38px;
+		height: 37px;
+	}
+	.ui {
+		background: url(../../img/services-ui.png)no-repeat;
+		width: 39px;
+		height: 36px;
+	}
+	.development {
+		background: url(../../img/services-development.png) no-repeat;
+		width: 42px;
+		height: 31px;
+	}
+	.graphics {
+		flex: 30%;
+		width: 30rem;
+		height: 33rem;
+		box-shadow: 0 5px 8px rgba(38, 47, 46, 0.1);
+		background-color: #f6f6f6;
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			width: 10rem;
+			height: 43.6rem;
+			background-color: #2c4755;
+			position: absolute;
+			top: -5rem;
+			z-index: -1;
+			left: 29rem;
+			@media (min-width: $w1024) and  (max-width: $w1399) {
+				left: 27rem;
+			}
+			@media (min-width: $w768) and  (max-width: $w1023) {
+				left: 23rem;
+				margin-right: 8rem;
+				flex: 35%;
+			}
+		}
+		@media (min-width: $w1024) and  (max-width: $w1399) {
+			flex: unset;
+			width: 32rem;
+		}
+		@media (min-width: $w768) and  (max-width: $w1023) {
+			margin-right: 8rem;
+			flex: 35%;
+		}
+		@media (min-width: $w425) and  (max-width: $w767) {
+			display: none;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			display: none;
+		}
+	}
+}

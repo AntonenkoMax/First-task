@@ -1,0 +1,94 @@
+@import "./vars.scss";
+@import "./normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap');
+@import "./modules/nav.scss";
+@import "./modules/header.scss";
+@import "./modules/work.scss";
+@import "./modules/services.scss";
+@import "./modules/portfolio.scss";
+@import "./modules/about.scss";
+@import "./modules/contact.scss";
+@import "./modules/footer.scss";
+
+
+
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+
+//   @media screen and (max-width: $desktopWidth) {
+//     font-size: 16px;
+//   }
+
+//   @media screen and (max-width: $tableWidth) {
+//     font-size: 15px;
+//   }
+
+//   @media screen and (max-width: $phoneWidth) {
+//     font-size: 14px;
+//   }
+
+  //добавил я
+  @media (min-width: $w1024) and (max-width: $w1399) {
+	  font-size: 9px;
+  }
+  @media (min-width: $w768) and (max-width: $w1024) {
+	font-size: 7.8px;
+	}
+	@media (min-width: $w320) and (max-width: $w767) {
+		font-size: 7px;
+	}
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+}
+
+
+// section,
+// .section {
+//   position: relative;
+//   // padding: 40px 0;
+//   padding: 0 0;
+
+//   @media screen and (max-width: $desktopWidth) {
+//     padding: 36px 0;
+//   }
+
+//   @media screen and (max-width: $desktopWidth) {
+//     padding: 28px 0;
+//   }
+
+//   @media screen and (max-width: $desktopWidth) {
+//     padding: 20px 0;
+//   }
+// }
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1115px;
+
+  @media screen and (max-width: $smDesktopWidth) {
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: $w767) {
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+    max-width: 90%;
+  }
+}
+
+// Modules

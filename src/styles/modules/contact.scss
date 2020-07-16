@@ -1,0 +1,128 @@
+.contact {
+
+	.contact__wrapper {
+		background-color: #fafafa;
+	}
+	.container {
+		@media (min-width: $w768) and  (max-width: $w1023) {
+			width: 80%;
+		}
+	}
+	.contact__inner {
+		padding-bottom: 17rem;
+	}
+	.title {
+		color: #f6f6f6;
+		font-size: 16.2rem;
+		font-family: "Work Sans";
+		font-weight: "Extra Bold";
+		margin-top: 9.2rem;
+		text-align: center;
+		&::after {
+			content: "We are born to create";
+			display: block;
+			color: #575757;
+			font-family: "Work Sans";
+			font-size: 2.5rem;
+			font-weight: 400;
+			margin: auto;
+			margin-top: -7.7rem;
+			@media (min-width: $w320) and  (max-width: $w424) {
+				margin-top: -5.7rem;
+			}
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			font-size: 11rem;
+		}
+	}
+	.content {
+		@media (min-width: $w1024) and  (max-width: $w1399) {
+			padding-left: 10%;
+		}
+	}
+	.text {
+		color: #2c4755;
+		font-size: 5.5rem;
+		font-family: "Work Sans";
+		font-weight: "Extra Bold";
+		margin: 0;
+		@media (min-width: $w425) and  (max-width: $w767) {
+			font-size: 4.5rem;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			font-size: 3.5rem;
+		}
+	}
+	.email {
+		color: #10cab7;
+		font-size: 5rem;
+		font-family: "Work Sans";
+		font-weight: "Extra Bold";
+		margin: 0;
+		padding: 2.9rem 0 0 4.3rem;
+		@media (min-width: $w425) and  (max-width: $w767) {
+			font-size: 4rem;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			font-size: 3rem;
+		}
+	}
+	.social {
+		display: flex;
+		margin: 0;
+		padding: 5.3rem 0 0 10.4rem;
+		width: 34.6rem;
+		height: 2.2rem;
+		@media (min-width: $w425) and  (max-width: $w767) {
+			padding: 5.3rem 0 0 0;
+			width: 49.6rem;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			padding: 5.3rem 0 0 0;
+			width: unset;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	.social-text {
+		color: #334752;
+		font-family: "Work Sans";
+		font-size: 1.5rem;
+		margin: 0;
+	}
+	.social-link {
+		padding-left: 4.6rem;
+		display: flex;
+		justify-content: space-between;
+		width: 13rem;
+		@media (min-width: $w425) and  (max-width: $w767) {
+			padding-left: 4.6rem;
+			width: 37rem;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			padding: 0;
+			width: 37rem;
+		}
+	}
+	.link {
+		@media (min-width: $w320) and  (max-width: $w424) {
+			padding: 2rem;
+		}
+	}
+	.link-web {
+		background: url(../../img/con-web.svg) no-repeat;
+		width: 22px;
+		height: 21px;
+	}
+	.link-google {
+		background: url(../../img/con-google.svg) no-repeat;
+		width: 22px;
+		height: 19px;
+	}
+	.link-twit {
+		background: url(../../img/con-twitter.svg);
+		width: 22px;
+		height: 17px;
+	}
+}

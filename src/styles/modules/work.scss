@@ -1,0 +1,63 @@
+.work {
+
+	.container {
+		max-width: 192rem;
+	}
+	.work-block {
+		display: flex;
+		@media (min-width: $w425) and  (max-width: $w767) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		@media (min-width: $w320) and  (max-width: $w424) {
+			flex-wrap: wrap;
+		}
+	}
+	.work-item {
+		height: 40rem;
+		width: 64rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&:hover {
+			box-shadow: 0 1rem 1.2rem rgba(38, 47, 46, 0.2);
+		}
+	}
+	.lamp {
+		background: url(../../img/Work-lamp.svg)no-repeat;
+		width: 71px;
+		height: 71px;
+	}
+	.colb {
+		background: url(../../img/Work-colb.svg) no-repeat;
+		width: 61px;
+		height: 77px;
+	}
+	.globe {
+		background: url(../../img/Work-globe.svg) no-repeat;
+		width: 64px;
+		height: 73px;
+	}
+	.item-logo {
+		margin-top: 8rem; 
+	}
+	.item-header {
+		color: #2c4755;
+		font-family: "Work Sans";
+		font-weight: "Extra Bold";
+		font-size: 2rem;
+		text-align: center;
+		margin-top: 5rem;
+		margin-bottom: 3.5rem;
+	}
+	.item-text {
+		text-align: center;
+		width: 27rem;
+		height: 7.5rem;
+		color: #575757;
+		font-family: "Work Sans";
+		font-size: 1.5rem;
+		font-weight: 400;
+		margin: 0;
+	}
+}
